@@ -1,0 +1,261 @@
+body
+{
+	background: linear-gradient( #101013, #101013 20%, #6a1416);
+  	color: white;
+  	text-shadow: 1px 1px 1px black;
+  	font-family: 'Roboto', sans-serif;
+}
+
+#global
+{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2em;
+	text-align: center;
+  	margin: 2em;
+}
+
+#div-header-h1
+{
+	width: 50%;
+	margin: auto 25px;
+}
+
+h1
+{
+	font-size: 10vw;
+	font-weight: bold;
+	-khtml-user-select : none;
+  	-webkit-user-select : none;
+  	-moz-user-select : -moz-none;
+  	-ms-user-select : none;
+  	user-select : none;
+}
+
+h2
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+p
+{
+	font-size: 14px;
+}
+
+#p-header
+{
+	font-size: 2vw;
+}
+
+.ctn-settings
+{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	background-position: center;
+	background-size: cover;
+}
+
+#ctn-header
+{
+	grid-column: span 4;
+	grid-row: span 1;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 25vw;
+	background-image: url(../img/header-medias.jpg);
+}
+
+.ctn-article-vbig
+{
+	grid-column: span 3;
+	grid-row: span 2;
+	height: 400px;
+}
+
+.ctn-article-long
+{
+	grid-row: span 2;
+	height: 400px;
+}
+
+.ctn-article-small
+{
+	height: 200px;
+}
+
+.ctn-article-big
+{
+	grid-column: span 2;
+	height: 200px;
+}
+
+.a-center
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.a-right
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.a-left
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#div-header-p
+{
+	width: 40%;
+	margin: auto 25px;
+}
+
+.div-center
+{
+	width: 80%;
+	margin: auto 0;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+
+.div-side
+{
+	width: 50%;
+	margin: auto 10px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	padding: 5px;
+}
+
+.div-bottom
+{
+	width: 100%;
+	margin-top: auto;
+	margin-bottom: 10px;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+}
+
+#superquadro
+{
+	background-image: url(../img/article-superquadro.jpg);
+}
+
+#rossi
+{
+	background-image: url(../img/article-rossi.jpg);
+	background-position: center left;
+}
+
+#historique
+{
+	background-image: url(../img/article-historique.jpg);
+	background-position: center left;
+}
+
+#hypermotard
+{
+	background-image: url(../img/article-hypermotard.jpg);
+}
+
+#ducatisport
+{
+	background-image: url(../img/article-1098.jpg);
+}
+
+#bynight
+{
+	background-image: url(../img/article-by-night.jpg);
+}
+
+#claudio
+{
+	background-image: url(../img/article-claudio.jpg);
+}
+
+#magasin
+{
+	background-image: url(../img/article-magasin.jpg);
+}
+
+
+@media screen and (min-width:1100px)
+{
+	.ctn-settings
+	{
+		height: 300px;
+	}
+
+	p
+	{
+		font-size: 1.5vw;
+	}
+
+	h2
+	{
+		font-size: 2vw;
+	}
+
+	.ctn-article-vbig
+	{
+		height: 600px;
+	}
+
+	.ctn-article-long
+	{
+		height: 600px;
+	}
+
+	.ctn-article-small
+	{
+		height: 300px;
+	}
+
+	.ctn-article-big
+	{
+		height: 300px;
+	}
+}
+
+
+@media screen and (max-width:950px)
+{
+	#global
+	{
+		display: flex;
+   		flex-direction: column;
+	}
+	.ctn-settings
+	{
+		height: 300px;
+		margin-top: 20px;
+	}
+	#historique
+	{
+		background-position: center;
+	}
+
+	#hypermotard
+	{
+		background-position: right;
+	}
+	#ctn-header
+	{
+		background-position: center -200px;
+	}
+}
